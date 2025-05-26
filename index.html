@@ -3,35 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Saulius's Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="profile-card">
-        <img src="" alt="" class="">
-        <h1 class="name">Sauliaus profile</h1>
-        <p class="bio">Mėgstantis anime, manga, compiuterinius ir stalo žaidimus, žiūrėti filmus.</p>
-
-        <div class="anime-section">
-            <h2>Mėgstamausios Anime ir manga</h2>
-            <ul class="anime-list">
-                <li>ONE piece</li>
-                <li>Dragon ball</li>
-                <li>One punch man</li>
-                <li>Spy x family</li>
-                <li>I m really not the devils lackey.</li>
-            </ul>
- </div>
-            <div class="game-section"></div>
-             <h2>Mėgstamausi filmai</h2>
-            <ul class="game-list">
-                <li>Minecraft</li>
-                <li>Rimworld</li>
-                <li>GTA 5</li>
-                <li>Schedule 1</li>
-                <li>Wasteland story</li>
-            </ul>
+    <div class="profile-background">
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-avatar">
+                <h1>Saulius</h1>
+                <p class="profile-tagline">Anime • Games • Movies Enthusiast</p>
+            </div>
+            
+            <div class="profile-content">
+                <div class="interest-section">
+                    <div class="section-header">
+                        <h2><span class="emoji">🍥</span> Favorite Anime and Manga</h2>
+                        <button class="info-btn" onclick="showInfo('anime-info')">More Info</button>
+                    </div>
+                    <ul class="interest-list anime-list">
+                        <li>ONE PIECE</li>
+                        <li>Dragon Ball</li>
+                        <li>One Punch Man</li>
+                        <li>Spy x Family</li>
+                        <li>I'm Really Not the Devil's Lackey</li>
+                    </ul>
+                    <div id="anime-info" class="hidden-info">
+                        <p>I've been watching anime since childhood. My favorites are action-packed shonen series like ONE PIECE.</p>
+                    </div>
+                </div>
+                
+                <div class="interest-section">
+                    <div class="section-header">
+                        <h2><span class="emoji">🎮</span> Favorite Games</h2>
+                        <button class="info-btn" onclick="showInfo('games-info')">More Info</button>
+                    </div>
+                    <ul class="interest-list game-list">
+                        <li>Minecraft</li>
+                        <li>Rimworld</li>
+                        <li>GTA 5</li>
+                        <li>Schedule 1</li>
+                        <li>Wasteland Story</li>
+                    </ul>
+                    <div id="games-info" class="hidden-info">
+                        <p>I enjoy both computer and tabletop games. Minecraft is my favorite for creativity, while Rimworld offers great but most of the time, terible storytelling.</p>
+                    </div>
+                </div>
+                
+                <div class="interest-section">
+                    <div class="section-header">
+                        <h2><span class="emoji">🎬</span> Favorite Movies</h2>
+                        <button class="info-btn" onclick="showInfo('movies-info')">More Info</button>
+                    </div>
+                    <ul class="interest-list movie-list">
+                        <li>The Motherless Brooklyn</li>
+                        <li>The Adventures of Tintin: The secret of the unicorn</li>
+                        <li>The Lord of the Rings</li>
+                    </ul>
+                    <div id="movies-info" class="hidden-info">
+                        <p>I appreciate movies with great storytelling and visuals. The Motherless Brooklyn is my all-time favorite detective movie.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-   
+    </div>
+    <script>
+        function showInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 </html>

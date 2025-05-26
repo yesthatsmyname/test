@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #1c1e21;
+}
+
+.header {
+    background-color: #1877f2;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1877f2;
+}
+
+.profile-bio {
+    color: #65676b;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.interest-section {
+    margin-bottom: 30px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e4e6eb;
+    padding-bottom: 5px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    color: #1877f2;
+    margin: 0;
+}
+
+.info-btn {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.info-btn:hover {
+    background-color: #166fe5;
+}
+
+.anime-list,
+.game-list,
+.movie-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.anime-list li,
+.game-list li,
+.movie-list li {
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.anime-list li:hover,
+.game-list li:hover,
+.movie-list li:hover {
+    background-color: #e4e6eb;
+}
+
+.anime-list li::before {
+    content: "🍥";
+    margin-right: 10px;
+}
+
+.game-list li::before {
+    content: "🎮";
+    margin-right: 10px;
+}
+
+.movie-list li::before {
+    content: "🎬";
+    margin-right: 10px;
+}
+
+.hidden-info {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-left: 3px solid #1877f2;
+}
